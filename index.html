@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random Quote Machine by RandomlyKnighted</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700">
+        <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    <section>
+        <div class="container">
+        <i id="open-quote" class="fa fa-quote-left fa-3x"></i>
+        <h3 id="quote" class="text-center"></h3>
+        <h3 id="author" class="text-right"></h3>
+        <i id="closed-quote" class="fa fa-quote-right fa-3x pull-right"></i>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+        <button id="newQuote" class="btn btn-lg btn-success" type="button">New Quote</button>
+        <a id="twitterBtn" class="btn btn-lg btn-primary" type="button"><i class="fa fa-twitter fa-lg"></i> Tweet It</a>
+        <p id="footer-text" class="text-center">Designed and developed by Tyler Hughes
+            <br />&copy; 2015 - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>

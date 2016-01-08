@@ -1,0 +1,58 @@
+/*
+*  Quote Section
+*/
+
+section {
+  background-color: #5CB3C4;
+  min-height: 50vh;
+}
+
+#open-quote {
+  margin-top: 40px;
+}
+
+#closed-quote {
+  margin-top: 20px;
+}
+
+section > .container > i {
+  color: #C3C3C3;
+}
+
+#quote {
+  margin-left: 60px;
+  word-wrap: break-word;
+  max-width: 80%;
+}
+
+#author {
+  margin-right: 60px;
+}
+
+
+/*
+*  Footer Section
+*/
+
+footer > .container > button,
+footer > .container > a {
+  margin-top: 40px;
+}
+
+#footer-text {
+  margin-top: 20px;
+}
+
+
+/*
+*  Miscellaneous
+*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-family: 'Lato', 'Alegreya Sans SC';
+}
